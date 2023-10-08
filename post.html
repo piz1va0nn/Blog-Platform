@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Post</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>pingstagram!</h1>
+            </div>
+
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+
+            <div class="create-post">
+                <a href="create-post.html" class="create-post-button"> New post<span class="plus-icon">+</span> </a>
+            </div>
+
+            <div class="user-buttons">
+                <a href="profile.html" class="login-button">Log In</a>
+                <button class="signup-button">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="blog-post-container">
+            <article class="blog-post">
+                <h2>Blog Post Title</h2>
+                <p class="blog-date">Published on January 1, 2023</p>
+                <img id="post_pic" src="https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Blog Post Image">
+                <p class="blog-content">This is the content of the blog post. It can be longer and contain more details.</p>
+                <h3>Writer Information</h3>
+                <p>Written by <a href="profile.html" >@pin9s</a> </p>
+
+            </article>
+            
+            <!-- Comment Section -->
+            <div class="comment-section">
+                <h3>Comments</h3>
+                <div class="comments">
+                    <!-- Individual Comments Go Here -->
+                </div>
+                
+                <!-- Comment Input Form -->
+                <form action="#" method="post" class="comment-form">
+                    <label for="comment">Leave a Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+</body>
+</html>

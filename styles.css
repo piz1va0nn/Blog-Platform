@@ -1,0 +1,330 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: start;
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+
+.main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Initially, one column */
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 30px; /* Gap between cards */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+
+/* Style for each card */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Hide any image overflow */
+}
+
+/* Style for card images */
+.card img {
+    max-width: 100%;
+    /* max-width: 100%;
+    height: 90px;
+    object-fit: cover; This will make the image cover the entire container while maintaining its aspect ratio */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100px;
+}
+
+
+/* Style for card descriptions */
+.description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#search-button:hover {
+    background-color: #676767;
+}
+
+
+.create-post {
+    display: flex;
+    align-items: center;
+}
+.create-post-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none; /* Remove underlines from the link */
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.plus-icon {
+    margin-left: 5px; /* Add spacing between the text and the plus icon */
+    font-size: 20px; /* Adjust the icon size as needed */
+}
+
+.create-post-button:hover {
+    background-color: #333;
+}
+
+
+/* Style for the user buttons */
+.user-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-button,
+.signup-button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover,
+.signup-button:hover {
+    background-color: #a9a9a9;
+}
+
+
+
+footer  {
+    padding: 10px 20px 100px;
+    margin-top: 50px;
+    background-color: #555;
+    text-align: center;
+    color: #fff;
+}
+
+/* Style for the create post container */
+.create-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form labels and inputs */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Style for the profile container */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for user information */
+.user-info {
+    text-align: center;
+}
+
+.user-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Style for the blog post container */
+.blog-post-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for blog posts */
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.blog-content {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Style for the comment section */
+.comment-section {
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+
+.comment p {
+    font-size: 16px;
+}
+
+/* Style for the comment input form */
+.comment-form {
+    margin-top: 20px;
+}
+
+
+
+/* Responsive layout: Cards stack on smaller screens */
+@media screen and (max-width: 508px) {
+    .card-container {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .search{
+        display: none;
+    }
+}
